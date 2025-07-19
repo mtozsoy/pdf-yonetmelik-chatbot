@@ -15,3 +15,36 @@ Bu proje, klasörünüzdeki PDF dosyalarını okuyarak öğrencilerin sorduğu s
 
 ```bash
 pip install -r requirements.txt
+```
+
+### 2. Ollama ile Mistral modelini indirip çalıştırın
+Eğer yüklü değilse, Ollama uygulamasını indirip kurun. Ardından terminale şu komutu yazın:
+```bash
+ollama run mistral
+```
+### 3. PDF dosyalarınızı yerleştirin
+Proje dizininde bir pdfs/ klasörü oluşturun ve içine istediğiniz PDF yönetmeliklerini veya belgeleri atın.
+
+### 4. Uygulamayı başlatın
+```bash
+python app.py
+```
+Uygulama çalıştığında tarayıcınızdan şu adrese giderek chatbot'u kullanabilirsiniz:
+```cpp
+http://127.0.0.1:5000
+```
+### 📝 Kullanım
+Web arayüzü açıldığında kullanıcıdan soru alır.
+
+Arka planda tüm PDF'leri okur ve bunlara göre Mistral ile cevap üretir.
+
+PDF'lerdeki içerik değişirse uygulamayı yeniden başlatmanız gerekir.
+
+### 📦 Gereksinimler
+Python 3.8+
+
+Flask
+
+PyPDF2
+
+Ollama (arka planda model çalıştırmak için)

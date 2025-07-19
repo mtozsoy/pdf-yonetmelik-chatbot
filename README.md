@@ -1,15 +1,17 @@
-# PDF Chatbot with Mistral & Flask
+# 🧠 PDF Okuyan Chatbot (Mistral + Flask)
 
-Bu proje, PDF dosyalarındaki yönetmelikleri okuyup kullanıcılardan gelen sorulara Mistral büyük dil modeli ile cevap veren bir web uygulamasıdır.
+Bu proje, klasörünüzdeki PDF dosyalarını okuyarak öğrencilerin sorduğu sorulara PDF'lere dayalı olarak cevap verebilen bir chatbot sistemidir. Arka planda [Mistral](https://ollama.com/library/mistral) büyük dil modeli ve [Flask](https://flask.palletsprojects.com/) web framework'ü kullanılmaktadır.
 
-## Özellikler
-- Birden fazla PDF dosyası desteği
-- Web arayüzü
-- Ollama destekli Mistral modeli
-- Flask backend
+## 📂 Özellikler
 
-## Kurulum
+- 📄 Bir veya birden fazla PDF dosyasını okuyabilir.
+- 🤖 Ollama üzerinden Mistral modelini kullanır.
+- 🌐 Flask tabanlı web arayüzü ile soru-cevap sistemi sunar.
+- ✨ Basit ve şık bir kullanıcı arayüzü içerir.
+
+## 🚀 Kurulum
+
+### 1. Gerekli paketleri yükleyin
+
 ```bash
-git clone https://github.com/kullaniciadi/pdf-chatbot-mistral.git
-cd pdf-chatbot-mistral
 pip install -r requirements.txt

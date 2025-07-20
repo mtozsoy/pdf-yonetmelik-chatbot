@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from utils import read_all_pdfs_from_folder, split_text
+from pdf_utils import read_all_pdfs_from_folder, split_text
 from embedding import create_faiss_index, search_similar
 import subprocess
 
